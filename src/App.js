@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import * as firebase from 'firebase';
 import RoomList from './components/RoomList';
 import MessageList from './components/MessageList';
+import User from './components/user';
 
 // Initialize Firebase
 
@@ -62,7 +63,11 @@ import MessageList from './components/MessageList';
     render() {
       return (
         <div className="App">
-          
+          <User
+            firebase = {firebase}
+            user = {this.state.user}
+            setUser = {(e)=> this.setUser(e)}
+            />
           <RoomList
             firebase = {firebase}
             setActive = {(e) => this.setActive(e)}

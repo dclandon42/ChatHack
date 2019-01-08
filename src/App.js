@@ -3,19 +3,19 @@ import * as firebase from 'firebase';
 import RoomList from './components/RoomList';
 import MessageList from './components/MessageList';
 import User from './components/user';
+import './App.css';
 
 // Initialize Firebase
-
-// Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBhtVa59rx03xYh9LuWiaaVpOy5pSz6H1U",
-    authDomain: "bloc-chat-react-575f9.firebaseapp.com",
-    databaseURL: "https://bloc-chat-react-575f9.firebaseio.com",
-    projectId: "bloc-chat-react-575f9",
-    storageBucket: "bloc-chat-react-575f9.appspot.com",
-    messagingSenderId: "385327052033"
-  };
-  firebase.initializeApp(config);
+ var config = {
+   apiKey: "AIzaSyBhtVa59rx03xYh9LuWiaaVpOy5pSz6H1U",
+   authDomain: "bloc-chat-react-575f9.firebaseapp.com",
+   databaseURL: "https://bloc-chat-react-575f9.firebaseio.com",
+   projectId: "bloc-chat-react-575f9",
+   storageBucket: "bloc-chat-react-575f9.appspot.com",
+   messagingSenderId: "385327052033"
+ };
+ firebase.initializeApp(config);
+  
 
   class App extends Component {
     constructor(props) {

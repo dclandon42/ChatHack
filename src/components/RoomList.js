@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './RoomList.css';
 
 class RoomList extends Component {
   constructor(props) {
@@ -69,7 +70,7 @@ class RoomList extends Component {
           </div>
         </section>
         <section className={this.state.showModal}>
-          <h2>Create New Room</h2>
+          <h2 id="subhead">Create New Room</h2>
           <form onSubmit={(e) => this.handleSubmit(e)}>
             <input className="form-text"
               type="text"

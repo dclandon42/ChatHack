@@ -1,0 +1,20 @@
+h1{
+font-family: inherit;
+font-size: 80px;
+border-color: white;
+border-width: medium;
+border-style: solid;
+border-right: none;
+border-left: none;
+}
+li{
+  list-style: none;
+  text-align:
+}
+#subhead{
+  border-color: white;
+  border-width: medium;
+  border-style: solid;
+  border-right: none;
+  border-left: none;
+}
